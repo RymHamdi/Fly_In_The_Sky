@@ -38,7 +38,7 @@ public class Drone_Engine : MonoBehaviour, IEngine
         }
         else
         {
-            currentValue -= Time.deltaTime*5;
+            currentValue -= Time.deltaTime*2;
             if (currentValue < 0)
             {
                 currentValue = 0;
@@ -62,7 +62,7 @@ public class Drone_Engine : MonoBehaviour, IEngine
         {
             sign = 1;
         }
-        engineForce = transform.up * ((rb.mass * Physics.gravity.magnitude *sign*3) + (input.Throttle * maxPower)) / 4f;
+        engineForce = transform.up * ((rb.mass * Physics.gravity.magnitude *sign*1.5f) + (input.Throttle * maxPower)) / 4f;
         rb.AddForce(engineForce, ForceMode.Force);
         HandlePropellers();
     }

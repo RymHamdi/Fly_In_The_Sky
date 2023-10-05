@@ -110,7 +110,7 @@ MonoBehaviour:
   weightInLbs: 4
   minMaxPitch: 30
   minMaxRoll: 30
-  yawPower: 4
+  yawPower: 2
   lerpSpeed: 2
 --- !u!1 &7051656909384299648
 GameObject:
