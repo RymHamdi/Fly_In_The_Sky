@@ -26,6 +26,7 @@ public class Drone_Controller : Drone_RigidBody
     {
         input = GetComponent<Drone_Input>();
         engines = GetComponentsInChildren<IEngine>().ToList<IEngine>();
+        StaticEvent.CallAssignDrone(transform);
     }
 
     #endregion

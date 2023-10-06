@@ -30,39 +30,7 @@ public class Drone_Engine : MonoBehaviour, IEngine
     {
         //Debug.Log("running engine: " + gameObject.name);
         Vector3 engineForce = Vector3.zero;
-        if ( input.Throttle != 0)
-        {
-
-            // Linearly interpolate between start and end values
-            currentValue = 1;
-        }
-        else
-        {
-            currentValue -= Time.deltaTime*2;
-            if (currentValue < 0)
-            {
-                currentValue = 0;
-            }
-        }
-
-        int sign;
-        if (currentValue == 0)
-        {
-            rb.constraints = RigidbodyConstraints.FreezePositionY;
-        }
-        else
-        {
-            rb.constraints = RigidbodyConstraints.None;
-        }
-        if (input.Throttle < 0)
-        {
-            sign = -1;
-        }
-        else
-        {
-            sign = 1;
-        }
-        engineForce = transform.up * ((rb.mass * Physics.gravity.magnitude *sign*1.5f) + (input.Throttle * maxPower)) / 4f;
+        engineForce =  transform.up * ((rb.mass * Physics.gravity.magnitude) + (input.Throttle * maxPower * 5)) / (4f + (rb.velocity.y * Time.deltaTime * 10));
         rb.AddForce(engineForce, ForceMode.Force);
         HandlePropellers();
     }
