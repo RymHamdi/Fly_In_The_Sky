@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     public GameObject droneClone1_1, droneClone1_2, droneClone1_3, droneClone1_4, droneClone1_5,droneClone1_6;
     public GameObject myCame;
 
+    public List<DroneBehavior> droneBehaviors;
+
     private void Awake()
     {
         if (instance == null)
@@ -33,9 +35,14 @@ public class GameManager : MonoBehaviour
         }
 
     }
+    
+    
+
     private void Start()
     {
         UIManager.instance.l1start();
+       
+        
 
     }
     public void level_1()
@@ -272,6 +279,13 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         Destroy(EditorCamera);
+        foreach (var item in droneBehaviors)
+        {
+            if (item.GetDrone() != null)
+            {
+                drone1 = item.DroneObj;
+            }
+        }
         droneClone1_1 = Instantiate(drone1, level1_pos);
         
     }
@@ -279,5 +293,21 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+}
+
+[System.Serializable]
+public class DroneBehavior
+{
+    public string DroneName;
+    public GameObject DroneObj;
+
+    public GameObject GetDrone()
+    {
+        if (PlayerPrefs.GetString("currentDrone") == DroneName)
+        {
+            return DroneObj;
+        }
+        return null;
     }
 }

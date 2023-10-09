@@ -14651,6 +14651,19 @@ MonoBehaviour:
   droneClone1_5: {fileID: 0}
   droneClone1_6: {fileID: 0}
   myCame: {fileID: 0}
+  droneBehaviors:
+  - DroneName: Whale
+    DroneObj: {fileID: 7051656909302480192, guid: 660240a4540a69542a95ea324dd6a34e, type: 3}
+  - DroneName: Turtle_Ship
+    DroneObj: {fileID: 5449876630653911152, guid: 3afefda68cf0fde4892f09a98042b840, type: 3}
+  - DroneName: Cherry_Blossom
+    DroneObj: {fileID: 9090343594561812672, guid: 3fe5f3203d17e7b44b89bdcbda0faf9b, type: 3}
+  - DroneName: Dragon
+    DroneObj: {fileID: 7093141173526673769, guid: aba3a921af4c44e43bb9bed1977e3d73, type: 3}
+  - DroneName: Fire_Fly
+    DroneObj: {fileID: 2017052532347086799, guid: c8946ad57ddf33a458b2efe220cdfb8a, type: 3}
+  - DroneName: Lady_Bug
+    DroneObj: {fileID: 3600243346017014500, guid: a7418f8ba1af09545bdbf523a26cd68d, type: 3}
 --- !u!4 &538424760
 Transform:
   m_ObjectHideFlags: 0

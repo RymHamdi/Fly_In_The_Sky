@@ -38,8 +38,9 @@ public class StartingInstruction : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+
+    public void SetCurrentDrone(string currentDrone)
     {
-        
+        PlayerPrefs.SetString("currentDrone", currentDrone);
     }
 }
