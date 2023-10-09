@@ -10,7 +10,7 @@ public class nevigator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        drone = FindObjectOfType<Drone_Engine>().gameObject.transform;
+      //  drone = FindObjectOfType<Drone_Engine>().gameObject.transform;
     }
 
     // Update is called once per frame

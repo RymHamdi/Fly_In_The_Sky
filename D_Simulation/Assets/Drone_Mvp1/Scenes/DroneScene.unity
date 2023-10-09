@@ -14622,7 +14622,7 @@ MonoBehaviour:
   level_1_5: 0
   level_1_6: 0
   EditorCamera: {fileID: 1105931565}
-  drone1: {fileID: 7051656909302480192, guid: 660240a4540a69542a95ea324dd6a34e, type: 3}
+  drone1: {fileID: 3600243346017014500, guid: a7418f8ba1af09545bdbf523a26cd68d, type: 3}
   level1_pos: {fileID: 2082111884}
   level2_pos: {fileID: 1812063938}
   level3_pos: {fileID: 143320988}
