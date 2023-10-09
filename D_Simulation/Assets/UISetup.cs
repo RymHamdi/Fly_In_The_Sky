@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class UISetup : MonoBehaviour
 {
     public CanvasGroup flashSceen;
@@ -42,5 +43,9 @@ public class UISetup : MonoBehaviour
     {
         yield return new WaitForSeconds(1.0f);
         group.DOFade(1, 1).SetEase(EaseFadeIn);
+    }
+    public void LoadScene(string currentScene)
+    {
+        SceneManager.LoadScene(currentScene);
     }
 }
