@@ -5,8 +5,10 @@ using DG.Tweening;
 using UnityEngine.UI;
 public class UISetup : MonoBehaviour
 {
-    public Image flashSceen;
+    public CanvasGroup flashSceen;
     public CanvasGroup DroneSelectionScreen;
+    public Ease EaseFadeIn;
+    public Ease EaseFadOut;
 
     private void OnEnable()
     {
@@ -16,25 +18,29 @@ public class UISetup : MonoBehaviour
 
     IEnumerator OnLOad()
     {
+        flashSceen.DOFade(1, 0.5f).SetEase(EaseFadeIn);
         yield return new WaitForSeconds(1.0f);
-        flashSceen.DOFade(0, 2);
-        yield return new WaitForSeconds(2);
-        DroneSelectionScreen.DOFade(1, 2);
+        flashSceen.DOFade(0, 1).SetEase(EaseFadOut);
+        yield return new WaitForSeconds(1);
+        DroneSelectionScreen.gameObject.SetActive(true);
+        DroneSelectionScreen.DOFade(1, 1).SetEase(EaseFadeIn);
     }
 
     public void FadeInPanel(CanvasGroup group)
     {
+        group.gameObject.SetActive(true);
         StartCoroutine(FadeIn(group));
     }
 
     public void FadeOutPanel(CanvasGroup group)
     {
-        group.DOFade(0, 2);
+        group.gameObject.SetActive(false);
+        group.DOFade(0, 1).SetEase(EaseFadOut);
     }
 
     IEnumerator FadeIn(CanvasGroup group)
     {
-        yield return new WaitForSeconds(2.0f);
-        group.DOFade(1, 2);
+        yield return new WaitForSeconds(1.0f);
+        group.DOFade(1, 1).SetEase(EaseFadeIn);
     }
 }
