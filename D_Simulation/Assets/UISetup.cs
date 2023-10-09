@@ -34,8 +34,8 @@ public class UISetup : MonoBehaviour
 
     public void FadeOutPanel(CanvasGroup group)
     {
-        group.gameObject.SetActive(false);
         group.DOFade(0, 1).SetEase(EaseFadOut);
+        group.gameObject.SetActive(false);
     }
 
     IEnumerator FadeIn(CanvasGroup group)
