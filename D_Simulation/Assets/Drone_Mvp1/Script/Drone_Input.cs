@@ -18,6 +18,15 @@ public class Drone_Input : MonoBehaviour
 
     #endregion
 
+    private void OnEnable()
+    {
+        StaticEvent.OnTriggerCoin += ResetInputAxes;
+    }
+
+    private void OnDisable()
+    {
+        StaticEvent.OnTriggerCoin -= ResetInputAxes;
+    }
 
     #region Main Methods
     // Update is called once per frame
@@ -46,4 +55,11 @@ public class Drone_Input : MonoBehaviour
         Debug.Log("hey broo is throll " + throttle);
     }
     #endregion
+
+    public void ResetInputAxes()
+    {
+        cyclic = Vector2.zero;
+        pedals = 0;
+        throttle = 0;
+    }
 }
