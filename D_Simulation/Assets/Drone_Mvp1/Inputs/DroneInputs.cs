@@ -125,7 +125,7 @@ public partial class @DroneInputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""0e4c0275-364e-4cba-861c-0592c69dd762"",
-                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""path"": ""<Gamepad>/rightStick/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -136,7 +136,7 @@ public partial class @DroneInputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""down"",
                     ""id"": ""71027a1a-7593-438a-b7ac-d4182f11e55c"",
-                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""path"": ""<Gamepad>/rightStick/down"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -147,7 +147,7 @@ public partial class @DroneInputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""c74f223b-503b-4d2d-bceb-95b7f479600d"",
-                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""path"": ""<Gamepad>/rightStick/left"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -158,7 +158,7 @@ public partial class @DroneInputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""0ac55cca-0e1f-49fb-8ff8-50d6ee05090a"",
-                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""path"": ""<Gamepad>/rightStick/right"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -213,7 +213,7 @@ public partial class @DroneInputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""negative"",
                     ""id"": ""a2e9c877-d583-4908-9b6d-946456bdc79d"",
-                    ""path"": ""<Gamepad>/rightStick/left"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -224,7 +224,7 @@ public partial class @DroneInputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""positive"",
                     ""id"": ""d103725d-d485-4f67-9a0f-be0584b6c987"",
-                    ""path"": ""<Gamepad>/rightStick/right"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -279,7 +279,7 @@ public partial class @DroneInputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""negative"",
                     ""id"": ""c11dcd98-6d01-4f58-b34a-93a217b2bf91"",
-                    ""path"": ""<Gamepad>/rightStick/down"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -290,7 +290,7 @@ public partial class @DroneInputs : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""positive"",
                     ""id"": ""8b8dac1a-b506-410b-8d26-1bc23174dc55"",
-                    ""path"": ""<Gamepad>/rightStick/up"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
