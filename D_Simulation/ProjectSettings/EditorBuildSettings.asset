@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Drone_Mvp1/Scenes/AutonomousScene.unity
     guid: 8aa314698977b44409b340ff7d9f0a4e
+  - enabled: 1
+    path: Assets/Drone_Mvp1/Scenes/Straight_Reverse_Course.unity
+    guid: 451c265a33512404d8f53dcc014c0f3c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: af355d9ac24bf1a45b339956e3467ba2, type: 2}
