@@ -16,6 +16,9 @@ public class AutonomousManager : MonoBehaviour
     public GameObject JoysticCanvas;
     public CanvasGroup PanelBetweenCoin;
     public CanvasGroup WinPanel;
+    public Ease EaseFadeIn;
+    public Ease EaseFadOut;
+
 
     private void OnEnable()
     {
@@ -103,6 +106,23 @@ public class AutonomousManager : MonoBehaviour
     public void LoadScene(string scenname)
     {
         SceneManager.LoadScene(scenname);
+    }
+    public void FadeInPanel(CanvasGroup group)
+    {
+        group.gameObject.SetActive(true);
+        StartCoroutine(FadeIn(group));
+    }
+
+    public void FadeOutPanel(CanvasGroup group)
+    {
+        group.DOFade(0, 0.3f).SetEase(EaseFadOut);
+        group.gameObject.SetActive(false);
+    }
+
+    IEnumerator FadeIn(CanvasGroup group)
+    {
+        yield return new WaitForSeconds(Time.deltaTime);
+        group.DOFade(1, 0.3f).SetEase(EaseFadeIn);
     }
 
 }

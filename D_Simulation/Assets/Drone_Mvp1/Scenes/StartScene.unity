@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.2464749, g: 0.2823448, b: 0.34570262, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1087,7 +1087,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 580.9838, y: -341.0669}
+  m_AnchoredPosition: {x: 522.75, y: -371.95}
   m_SizeDelta: {x: 291.5, y: 336.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &291436421
@@ -2257,7 +2257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1163.9839, y: -677.16693}
+  m_AnchoredPosition: {x: 1105.75, y: -708.05}
   m_SizeDelta: {x: 291.5, y: 336.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &691414502
@@ -2313,7 +2313,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Cherry_Blossom
+          m_StringArgument: Lady_Bug
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1269302300}
@@ -5182,7 +5182,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1455.4839, y: -677.16693}
+  m_AnchoredPosition: {x: 1397.25, y: -708.05}
   m_SizeDelta: {x: 291.5, y: 336.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1289844959
@@ -5238,7 +5238,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Cherry_Blossom
+          m_StringArgument: Dragon
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1269302300}
@@ -6081,7 +6081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 872.4838, y: -341.0669}
+  m_AnchoredPosition: {x: 814.25, y: -371.95}
   m_SizeDelta: {x: 291.5, y: 336.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1575489082
@@ -6137,7 +6137,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Cherry_Blossom
+          m_StringArgument: Whale
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1269302300}
@@ -6624,7 +6624,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 872.4838, y: -677.16693}
+  m_AnchoredPosition: {x: 814.25, y: -708.05}
   m_SizeDelta: {x: 291.5, y: 336.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1776143245
@@ -6680,7 +6680,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Cherry_Blossom
+          m_StringArgument: Fire_Fly
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1269302300}
@@ -7109,7 +7109,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1163.9839, y: -341.0669}
+  m_AnchoredPosition: {x: 1105.75, y: -371.95}
   m_SizeDelta: {x: 291.5, y: 336.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811551496
@@ -7165,7 +7165,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Turtle_Ship
+          m_StringArgument: Test_Turtle_Drone
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1269302300}
@@ -8000,7 +8000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1455.4839, y: -341.0669}
+  m_AnchoredPosition: {x: 1397.25, y: -371.95}
   m_SizeDelta: {x: 291.5, y: 336.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2063486847
