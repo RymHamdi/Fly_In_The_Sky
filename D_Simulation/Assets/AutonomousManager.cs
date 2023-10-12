@@ -81,6 +81,10 @@ public class AutonomousManager : MonoBehaviour
         CurrentDrone.SetActive(true);
         rb.constraints = RigidbodyConstraints.None;
         JoysticCanvas.SetActive(true);
+        JoysticCanvas.transform.GetChild(0).GetComponent<FixedJoystick>().enabled = true;
+        JoysticCanvas.transform.GetChild(0).GetComponent<FixedJoystick>().enabled = false;
+        JoysticCanvas.transform.GetChild(1).GetComponent<FixedJoystick>().enabled = true;
+        JoysticCanvas.transform.GetChild(1).GetComponent<FixedJoystick>().enabled = false;
     }
 
     IEnumerator GameWin()
