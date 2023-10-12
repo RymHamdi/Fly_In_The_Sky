@@ -55,18 +55,13 @@ public class Drone_Controller : Drone_RigidBody
 
         finalPitch = Mathf.Lerp(finalPitch, pitch, Time.deltaTime * lerpSpeed);
         finalRoll = Mathf.Lerp(finalRoll, roll, Time.deltaTime * lerpSpeed);
-        finalYaw = Mathf.Lerp(finalYaw, yaw, Time.deltaTime * lerpSpeed);
+        finalYaw = Mathf.Lerp(finalYaw, yaw, Time.deltaTime * lerpSpeed * Time.deltaTime * 20);
         //if (input.Throttle == 0)
         //{
         //    finalYaw = 1;
         //}
 
         Quaternion rot = Quaternion.Euler(finalPitch/2, finalYaw, finalRoll);
-        //transform.rotation = rot;
-        if (finalPitch + finalRoll + finalYaw != 0)
-        {
-
-        }
         rb.MoveRotation(rot);
         rb.velocity += input.Cyclic.y * (transform.forward + transform.up / 10) * Time.deltaTime * 5;
         //rb.velocity += transform.up * Time.deltaTime;

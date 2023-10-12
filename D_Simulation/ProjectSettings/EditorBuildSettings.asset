@@ -6,30 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/loadScene.unity
+    guid: ff185c9328a0d944c896bf07ec497b49
+  - enabled: 1
     path: Assets/Drone_Mvp1/Scenes/StartScene.unity
     guid: 788d6f8f3338c42469eddfa06cb33f6f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Drone_Mvp1/Scenes/DroneScene.unity
     guid: 5e7af4bd95ac53a4cb784a9eedf8f6f9
   - enabled: 1
     path: Assets/Drone_Mvp1/Scenes/AutonomousScene.unity
     guid: 8aa314698977b44409b340ff7d9f0a4e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Drone_Mvp1/Scenes/Straight_Reverse_Course.unity
     guid: 451c265a33512404d8f53dcc014c0f3c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Drone_Mvp1/Scenes/Circumferential_Course.unity
     guid: ae96c2d8907d8094297147bf07986686
-  - enabled: 1
+  - enabled: 0
     path: Assets/Drone_Mvp1/Scenes/Emergency_Landing_Course.unity
     guid: c3893ac3c185ff845bd041a4e7200374
-  - enabled: 1
+  - enabled: 0
     path: Assets/Drone_Mvp1/Scenes/Normal_Landing_Course.unity
     guid: ad090ef62513bf34fbebce6f9facb20a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Drone_Mvp1/Scenes/U_Shaped_Course.unity
     guid: 4a007e48a281e244ea6f3ff7034a0c08
-  - enabled: 1
+  - enabled: 0
     path: Assets/Drone_Mvp1/Scenes/S_Shaped_Course.unity
     guid: ad6e0c7de383c124bb6fdd3f4ecce807
   m_configObjects:
